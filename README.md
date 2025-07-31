@@ -20,11 +20,13 @@ It allows safe fallback to battery operation when USB power is lost.
 - XL6009 boost converter (set to 6.4V)
 - 2x XL74610 ideal diode modules
 - Wires, solder, drills/cutter, multimeter, hot glue gun, optional: JST-RCY wire-to-wire connector.
+- 5V (2A) Power supply with USB-C-connector. 1.5 A might work, but is not recommended.
 - (optional: Ultrasonic cutter to cut the plastic)
 
 ## ⚙️ Circuit Summary
 
 Power input comes either from a USB-C source (5V boosted to 6.4V) or the original 4x C battery pack. The two sources are fed through separate ideal diode modules and joined at the feeder's power input terminal.
+The ideal diode modules allow switching of the power sources (either USB-C or Battery), should one of the sources fail. Also, it provides protection against unwanted flow of current in the wrong direction. 
 
 ## 📝 Build Instructions
 
@@ -49,6 +51,4 @@ See [images/](images/) for wiring details and installation photos.
 
 ## ⚠️ Notes
 
-- The feeder draws <1A peak; standard USB-C power adapters work well
-- XL74610 ensures safe, automatic source switching
-- Avoid exceeding 6.5V to prevent stress on internal components
+The feeder draws <1A @6.4 Volts when operating the motor; Use at least a 5 V 2 Amp Power supply for enough headroom. Make sure, that your power supply can provide enough current.
