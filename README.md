@@ -30,6 +30,8 @@ The ideal diode modules allow switching of the power sources (either USB-C or Ba
 
 ## 📝 Build Instructions
 
+![Schematic of the connections](images/Wiring.png)
+
 1. Remove the four Philips screws on the bottom of the feeder. Open the feeder and locate power input terminals. 
 2. A possible spot for the negative terminal (or ground/GND) connection is the solder connection of the battery contact spring next to the TPGND pad. You need to lift the mainboard a little to reach the spot. Solder a black wire there. and run it down to the area next to the motor.
 3. For the positive connection, locate the red wire (on the opposite side of the mainboard. Make sure it is the correct side, or you will cause damage to the Mainboard) next to the ribbon connector and cut it a few centimeters after the mainboard.    
