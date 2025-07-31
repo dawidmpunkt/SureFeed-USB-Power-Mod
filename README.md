@@ -30,8 +30,6 @@ The ideal diode modules allow switching of the power sources (either USB-C or Ba
 
 ## 📝 Build Instructions
 
-![Schematic of the connections](images/Wiring.png)
-
 1. Remove the four Philips screws on the bottom of the feeder. Open the feeder and locate power input terminals. 
 2. A possible spot for the negative terminal (or ground/GND) connection is the solder connection of the battery contact spring next to the TPGND pad. You need to lift the mainboard a little to reach the spot. Solder a black wire there. and run it down to the area next to the motor.
 3. For the positive connection, locate the red wire (on the opposite side of the mainboard. Make sure it is the correct side, or you will cause damage to the Mainboard) next to the ribbon connector and cut it a few centimeters after the mainboard.    
@@ -46,6 +44,8 @@ The ideal diode modules allow switching of the power sources (either USB-C or Ba
 12. You can secure the modules and the wires with hot glue to the pet feeder. The components on the modules need to dissipate heat so they should face away from the surface. The back sides are usually free so you can add a drop of hot glue there.
 13. Install the bottom of the feeder and install batteries.
 14. Test the device.
+
+![Schematic of the connections](images/Wiring.png)
 
 ## 📷 Photos
 
