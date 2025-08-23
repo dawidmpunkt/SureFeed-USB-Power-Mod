@@ -2,6 +2,14 @@
 A modification to run the SureFeed Pet Feeder off a (5V) USB Wall Plug using a step-up boost converter and automatic power switching. 
 It allows safe fallback to battery operation when USB power is lost.
 
+
+## ⚠️ Attention
+
+> I noticed an issue with the mod: When the Surefeed is powered externally, the feeder does not open, when a pet-chip is near the antenna.
+> My suspect is the switching noise of the voltage-boost-module interfering with the antenna. It worked fine, when I installed the boost-module inside the battery compartment. So repositioning of the boost module might be an option. Another option would be to add shielding to the area around the boost-module.
+>
+> I checked the voltage going into the mainboard with an oscilloscope and voltage ripples should be no issue. As I mentioned before: The mod worked, when the Boost-module was installed inside the battery compartment.
+
 ## ⚠️ Disclaimer
 
 > ⚠️ **Warning**  
