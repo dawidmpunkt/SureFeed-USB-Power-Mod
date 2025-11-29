@@ -3,12 +3,13 @@ A modification to run the SureFeed Pet Feeder off a (5V) USB Wall Plug using a s
 It allows safe fallback to battery operation when USB power is lost.
 
 
-## ⚠️ Attention
+## ⚠️ UPDATE (29.11.2025)
+> The mod is fixed. Short: The output voltage of the DC-DC-Booster needs to be set to around 5.9-6.0 Volts. Before, I had it set to 6.4 Volts (which caused the issue) and because the motor opened and > closed the door a little faster (which I liked). My theory is that a voltage too high detunes the RFID receiver. 
 
-> I noticed an issue with the mod: When the Surefeed is powered externally, the feeder does not open, when a pet-chip is near the antenna.
-> My suspect is the switching noise of the voltage-boost-module interfering with the antenna. It worked fine, when I installed the boost-module inside the battery compartment. So repositioning of the boost module might be an option. Another option would be to add shielding to the area around the boost-module.
+~~> I noticed an issue with the mod: When the Surefeed is powered externally, the feeder does not open, when a pet-chip is near the antenna.~~
+~~> My suspect is the switching noise of the voltage-boost-module interfering with the antenna. It worked fine, when I installed the boost-module inside the battery compartment. So repositioning of the boost module might be an option. Another option would be to add shielding to the area around the boost-module.~~
 >
-> I checked the voltage going into the mainboard with an oscilloscope and voltage ripples should be no issue. As I mentioned before: The mod worked, when the Boost-module was installed inside the battery compartment.
+~~> I checked the voltage going into the mainboard with an oscilloscope and voltage ripples should be no issue. As I mentioned before: The mod worked, when the Boost-module was installed inside the battery compartment.~~
 
 ## ⚠️ Disclaimer
 
