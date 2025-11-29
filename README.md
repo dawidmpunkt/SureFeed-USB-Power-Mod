@@ -26,7 +26,7 @@ It allows safe fallback to battery operation when USB power is lost.
 ## 🔧 Components Used
 
 - USB-C jack (breakout)
-- XL6009 boost converter (set to 6.4V)
+- XL6009 boost converter (set to ~~6.4V~~ 5.9-6.0 V)
 - 2x XL74610 ideal diode modules
 - Wires, solder, drills/cutter, multimeter, hot glue gun, optional: JST-RCY wire-to-wire connector.
 - 5V (2A) Power supply with USB-C-connector. 1.5 A might work, but is not recommended.
@@ -34,7 +34,7 @@ It allows safe fallback to battery operation when USB power is lost.
 
 ## ⚙️ Circuit Summary
 
-Power input comes either from a USB-C source (5V boosted to 6.4V) or the original 4x C battery pack. The two sources are fed through separate ideal diode modules and joined at the feeder's power input terminal.
+Power input comes either from a USB-C source (5V boosted to ~~6.4V~~ 5.9-6.0V) or the original 4x C battery pack. The two sources are fed through separate ideal diode modules and joined at the feeder's power input terminal.
 The ideal diode modules allow switching of the power sources (either USB-C or Battery), should one of the sources fail. Also, it provides protection against unwanted flow of current in the wrong direction. 
 
 ## 📝 Build Instructions
@@ -45,11 +45,11 @@ The ideal diode modules allow switching of the power sources (either USB-C or Ba
 4. Solder the red wire from the mainboard to the cathode (+, pointy side of the arrow) side of one of the ideal diode modules. The arrow on the modules should point towards the mainboard.
 5. Solder the red wire from the Battery connector to the other end of the ideal diode module (back side of the arrow, anode/-).
 6. Cut a few centimeters of (red) wire and connect both cathode (+/pointy side of the arrow) terminals of the two ideal diode modules together.
-7. Install 4 Batteries. Check the voltage between ground and the cathode of the diode modules. It should be ~6V or a little more. If it is around 3V, there is a critical error in the wiring. If it is ok, remove the batteries and continue.
+7. Install 4 Batteries. Check the voltage between ground and the cathode of the diode modules. It should be ~~~6V or a little more~~ maximum 6.0V. If it is around 3V, there is a critical error in the wiring. If it is ok, remove the batteries and continue.
 8. Cut a slot for the USB-C-jack into the shell of the pet feeder (see pictures for the approximate location). A  Install the USB-C Jack. Optional: A JST-RCY connector is nice between the USB-C-Jack and the DC-Booster.
 9. Connect USB-C-jack to the DC-Booster input. Connect only the ground wire to the DC-Booster. Do not connect the DC-Booster to the red wire of the Pet-Feeder, yet.
 10. Connect a USB-C cable/charger. Adjust the DC-Booster to output ~+5V (check with multimeter between ground and the positive output terminal of the DC-Booster) We will increase the voltage later. Disconnect the Charger.
-11. Connect the red wire from the pet feeder to the DC-Booster. Connect the Charger and set the voltage of the DC-Booster, so the voltage between ground and the cathode of the diode modules is around 6.4 volts.
+11. Connect the red wire from the pet feeder to the DC-Booster. Connect the Charger and set the voltage of the DC-Booster, so the voltage between ground and the cathode of the diode modules is around ~~6.4~~ 5.9-6.0 volts.
 12. You can secure the modules and the wires with hot glue to the pet feeder. The components on the modules need to dissipate heat so they should face away from the surface. The back sides are usually free so you can add a drop of hot glue there.
 13. Install the bottom of the feeder and install batteries.
 14. Test the device.
@@ -62,4 +62,4 @@ See [images/](images/) for wiring details and installation photos.
 
 ## ⚠️ Notes
 
-The feeder draws <1A @6.4 Volts when operating the motor; Use at least a 5 V 2 Amp Power supply for enough headroom. Make sure, that your power supply can provide enough current.
+The feeder draws <1A ~~@6.4~~ 5.9-6.0 Volts when operating the motor; Use at least a 5 V 2 Amp Power supply for enough headroom. Make sure, that your power supply can provide enough current.
